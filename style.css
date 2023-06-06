@@ -10,7 +10,7 @@
 
 
 body {
-  background-image: url(img/background.png);
+  background-color: #153941;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
 }
 
 .container {
-  background-color: #16C1C5;
+  background-color: #4DBC8D;
   width: 500px;
   border-radius: 10px;
   padding: 20px;
@@ -48,7 +48,7 @@ h1 {
 
 .button-add-task:hover {
   opacity: 0.8;
-  background: #6EB8AE;
+  background: #314349;
 }
 
 .button-add-task:active {
@@ -86,7 +86,7 @@ img {
 }
 
 .done {
-  background-color: #0ECC08;
+  background-color: #0C6B5A;
   text-decoration: line-through;
 
 }
