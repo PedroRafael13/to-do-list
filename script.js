@@ -4,15 +4,20 @@ const listaCompleta = document.querySelector('.list-task')
 
 let minhaListaDeIntens = []
 
-function adicionarNovaTarefa(){
-  minhaListaDeIntens.push({
-    tarefa : input.value,
-    concluida: false, 
-  })
+function adicionarNovaTarefa() {
+  if (input.value.trim() === '') {
+    alert('Por favor, insira uma tarefa antes de adicionar.');
+    return;
+  }
 
-  input.value= ''
-  
-  mostrarTarefas()
+  minhaListaDeIntens.push({
+    tarefa: input.value,
+    concluida: false,
+  });
+
+  input.value = '';
+
+  mostrarTarefas();
 }
 
 function mostrarTarefas(){
