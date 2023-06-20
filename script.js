@@ -8,7 +8,14 @@ function adicionarNovaTarefa() {
   if (input.value.trim() === '') {
     alert('Por favor, insira uma tarefa antes de adicionar.');
     return;
+  } 
+
+  const tarefaExistente = minhaListaDeIntens.find(item => item.tarefa == input.value);
+  if (tarefaExistente) {
+    alert('Já existe uma tarefa com esse objetivo.');
+    return;
   }
+
 
   minhaListaDeIntens.push({
     tarefa: input.value,
